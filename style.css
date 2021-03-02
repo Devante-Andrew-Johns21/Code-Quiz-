@@ -8,10 +8,11 @@
 }
 
 body{
-    background:purple;
+    background: purple;
 }
 .start_btn,
-.info_box{
+.info_box,
+.quiz_box{
 position: absolute;
 top: 50%;
 left: 50%;
@@ -30,7 +31,7 @@ color: purple;
 }
 
 .info_box{
-    display:none ;
+    display: none;
     width: 540px;
     background: white;
     border-radius: 5px;
@@ -38,7 +39,7 @@ color: purple;
 .info_box .info_title{
     height: 60px;
     width: 100%;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid lightgrey;
     display: flex;
     align-items: center;
     padding: 0 35px;
@@ -46,7 +47,7 @@ color: purple;
     font-weight: 600;
 }
 .info_box .info_list{
-    padding: 15px 35px ;
+    padding: 15px 35px;
 
 }
 .info_box .info_list .info{
@@ -55,7 +56,7 @@ color: purple;
 }
 .info_box .info_list .info span{
     font-weight: 600;
-    color: purple;
+    
 }
 .info_box .buttons{
 height: 60px;
@@ -70,7 +71,7 @@ border-top: 1px solid lightgrey;
 margin: 0 5px;
 height: 40px;
 width: 100px;
-border: 1px solid transparent purple;
+border: 1px solid  purple;
 background:purple ;
 border-radius: 5px;
 color:white ;
@@ -79,7 +80,7 @@ font-weight: 500;
 cursor: pointer;
 
 }
-.buttons button .restart{
+.buttons button.restart{
     color: white;
     background: purple;
 }
@@ -92,4 +93,62 @@ color: white;
 .buttons button.quit:hover{
     color: white;
     background: purple;
+}
+
+.quiz_box{
+    width: 550px;
+background: white;
+border-radius: 5px;
+
+}
+.quiz_box header{
+    height: 70px;
+    padding: 0 30px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0px 3px 5px 1px black;
+
+}
+
+.quiz_box header .title{
+    font-size: 20px;
+    font-weight: 600;
+
+}
+.quiz_box header .timer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 145px;
+    height: 45px;
+    background: cyan;
+    border-radius: 5px;
+    padding: 0 8px;
+}
+
+.quiz_box header .timer .time_text{
+font-weight: 400;
+font-size: 17px;
+user-select: none;
+}
+
+.quiz_box header .timer .timer_sec{
+    font-size: 18px;
+    font-weight: 500;
+    background: grey;
+    height: 30px;
+    width: 45px;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+    border: 1px solid #343a40;
+}
+
+.quiz_box section{
+padding: 25px 30px 20px 30px;
+background: white;
 }
