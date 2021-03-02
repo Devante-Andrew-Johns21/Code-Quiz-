@@ -8,7 +8,7 @@
 }
 
 body{
-    background:black;
+    background:purple;
 }
 .start_btn,
 .info_box{
@@ -20,17 +20,17 @@ transform: translate(-50%, -50%);
 .start_btn button{
   font-size: 25px;
   font-weight: 500;
-
+color: purple;
   padding: 15px 30px;
   outline: none;
   border: none;
   border-radius: 5px;
-  background: purple;
+  background: white;
   cursor: pointer;
 }
 
 .info_box{
-    display: none;
+    display:none ;
     width: 540px;
     background: white;
     border-radius: 5px;
