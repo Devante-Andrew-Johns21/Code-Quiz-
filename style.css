@@ -20,7 +20,7 @@ transform: translate(-50%, -50%);
 .start_btn button{
   font-size: 25px;
   font-weight: 500;
-  color: white;  
+
   padding: 15px 30px;
   outline: none;
   border: none;
@@ -30,6 +30,7 @@ transform: translate(-50%, -50%);
 }
 
 .info_box{
+    display: none;
     width: 540px;
     background: white;
     border-radius: 5px;
@@ -55,4 +56,40 @@ transform: translate(-50%, -50%);
 .info_box .info_list .info span{
     font-weight: 600;
     color: purple;
+}
+.info_box .buttons{
+height: 60px;
+display: flex;
+align-items: center;
+justify-content: flex-end;
+padding: 0 35px;
+border-top: 1px solid lightgrey;
+}
+
+.info_box .buttons button{
+margin: 0 5px;
+height: 40px;
+width: 100px;
+border: 1px solid transparent purple;
+background:purple ;
+border-radius: 5px;
+color:white ;
+font-size: 16px;
+font-weight: 500;
+cursor: pointer;
+
+}
+.buttons button .restart{
+    color: white;
+    background: purple;
+}
+.buttons button.restart:hover{
+    background: purple;
+}
+.buttons button.quit{
+color: white;
+}
+.buttons button.quit:hover{
+    color: white;
+    background: purple;
 }
