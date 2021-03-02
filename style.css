@@ -10,7 +10,8 @@
 body{
     background:black;
 }
-.start_btn{
+.start_btn,
+.info_box{
 position: absolute;
 top: 50%;
 left: 50%;
@@ -26,5 +27,32 @@ transform: translate(-50%, -50%);
   border-radius: 5px;
   background: purple;
   cursor: pointer;
+}
 
+.info_box{
+    width: 540px;
+    background: white;
+    border-radius: 5px;
+}
+.info_box .info_title{
+    height: 60px;
+    width: 100%;
+    border-bottom: 1px solid gray;
+    display: flex;
+    align-items: center;
+    padding: 0 35px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.info_box .info_list{
+    padding: 15px 35px ;
+
+}
+.info_box .info_list .info{
+    margin: 5px 0;
+    font-size: 15px;
+}
+.info_box .info_list .info span{
+    font-weight: 600;
+    color: purple;
 }
